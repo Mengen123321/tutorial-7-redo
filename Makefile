@@ -22,10 +22,11 @@ index.html: report/report.qmd output/coef.csv output/fig.png
 	mv report/report.html index.html
 
 report:
-	make index.html
+	make docs/index.html
 
 clean:
 	rm -f output/*
 	rm -f data/clean/*
 	rm -f index.html
 	rm -f *.pdf
+	rm -rf docs/
